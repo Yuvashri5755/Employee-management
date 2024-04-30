@@ -1,0 +1,28 @@
+<h3>Employee management system</h3>
+<p><a href="/addUser" class="add-btn">Add Employee +</a></p>
+<table>
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>EName</td>
+            <td>Age</td>
+            <td>Salary</td>
+            <td>City</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each rows}}
+        <tr>
+            <td>{{this.ID}}</td>
+            <td>{{this.ENAME}}</td>
+            <td>{{this.AGE}}</td>
+            <td>{{this.SALARY}}</td>
+            <td>{{this.CITY}}</td>
+            <td><a href="/editUser/{{this.ID}}" class="edit">Edit</a></td>
+            <td><a href="/deleteUser/{{this.ID}}" class="delete">Delete</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

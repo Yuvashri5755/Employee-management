@@ -1,0 +1,28 @@
+<h3>Add new Employee </h3>
+{{#if msg}}
+<div class="alert">{{msg}}</div>
+{{/if}}
+<form method="post" action="/addUser">
+<div class="form-group">
+    <label for="Ename">EName</label>
+    <input type="text" name="Ename"/>
+</div>
+<div class="form-group">
+    <label for="age">Age</label>
+    <input type="number" name="age"/>
+</div>
+<div class="form-group">
+    <label for="salary">Salary</label>
+    <input type="number" name="salary">
+</div>
+<div class="form-group">
+    <label for="city">City</label>
+    <input type="text" name="city"/>
+</div>
+<div class="form-group">
+    <button type="submit">Save</button>
+    <a href="/">Back</a>
+</div>
+
+</form>
+
